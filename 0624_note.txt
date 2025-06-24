@@ -1,0 +1,9 @@
+安裝node指定版本:nvm -install 版本號2
+切換node 版本:nvm use 欲切換版本號
+顯示node 已安裝版本列表:nvm ls
+顯示node版本: node -v
+
+安裝Angular: npm install -g @angular/cli@19.0.5(版本號)
+顯示當前Angular版本: ng v
+建立Angular專案:ng new 專案名稱(盡量不要中文)
+啟動Angular應用程式:在根目錄位置 ng s(ng serve)，在網址列輸入 Local: http://localhost:XXXX/ 開啟Ag頁面或 直接輸入指令ng serve --open 自動開啟
