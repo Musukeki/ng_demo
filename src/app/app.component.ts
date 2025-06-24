@@ -10,8 +10,5 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'ng_demo';
 
-  clickBtn() {
-    alert("hello")
-  }
 
 }
