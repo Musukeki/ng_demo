@@ -6,4 +6,4 @@
 安裝Angular: npm install -g @angular/cli@19.0.5(版本號)
 顯示當前Angular版本: ng v
 建立Angular專案:ng new 專案名稱(盡量不要中文)
-啟動Angular應用程式:在根目錄位置 ng s(ng serve)，在網址列輸入 Local: http://localhost:XXXX/ 開啟Ag頁面或 直接輸入指令ng serve --open 自動開啟
+啟動Angular應用程式:在根目錄位置 ng s(ng serve)，在網址列輸入 Local: http://localhost:XXXX/ 開啟Ag頁面或 直接輸入指令ng s --o(ng serve --open) 自動開啟
