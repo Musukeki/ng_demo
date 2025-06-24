@@ -1,0 +1,41 @@
+img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.btnCss {
+
+		color:#eee;
+		font-size: 20px;
+		font-weight: 700;
+
+
+		display: inline-block;
+
+    border: 3px solid rgba(98, 127, 185, 0.588);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: #90a4d7;
+    box-shadow: 2px 2px 3px #bbb;
+	}
+	.dogImg {
+		width: 150px;
+		height: 150px;
+
+    border-radius: 50%;
+    overflow: hidden;
+	}
+
+  .wrap {
+    background: #dbbacf80;
+    width: 200px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+
+    box-shadow: 5px 5px 3px #00000036;
+    margin: 0 auto;
+  }
