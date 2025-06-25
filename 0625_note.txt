@@ -1,0 +1,1 @@
+下載其他的專案時，先執行 npm install 使其安裝 package.json 內的所有使用到的套件以及 node_modules
