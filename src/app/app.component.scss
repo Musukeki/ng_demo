@@ -8,60 +8,73 @@
 
 
 // ?0625 box model 練習1
-.imgLeft {
-  margin-right: 24px;
-}
+// .imgLeft {
+//   margin-right: 24px;
+// }
 
-.box {
-  width: 524px;
-  height: 100px;
-  background-color: #ddd;
-  margin: 36px 0;
-}
+// .box {
+//   width: 524px;
+//   height: 100px;
+//   background-color: #ddd;
+//   margin: 36px 0;
+// }
 
-.txtArea {
-  width: 384.4px;
-  height: 18.4px;
-  margin-right: 18px;
-  padding: 0 !important;
-  border: 1px solid;
-}
-.btn {
-  width: 120px;
-  height: 20px;
-  background-color: #fff;
-  border: 1px solid;
-}
+// .txtArea {
+//   width: 384.4px;
+//   height: 18.4px;
+//   margin-right: 18px;
+//   padding: 0 !important;
+//   border: 1px solid;
+// }
+// .btn {
+//   width: 120px;
+//   height: 20px;
+//   background-color: #fff;
+//   border: 1px solid;
+// }
 
 // ?0625 box model 練習2
-.signIn {
-  background-color: blue;
-  width: 250px;
-  color: #fff;
-  padding: 24px 32px 48px;
-}
-.signInTitle {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-.signInList {
-  list-style: none;
-  padding: 0;
-}
-.userAcc, .userPwd {
-  border-radius: 100px;
-  width: 190px;
-  // width: 100%;
-  margin-bottom: 20px;
-}
-.btnLogin {
-  background-color: rgb(202, 42, 42);
-  width: 100%;
-  border-radius: 100px;
-  // margin-top: 24px;
-  color: #fff;
-}
+// .signIn {
+//   background-color: blue;
+//   width: 250px;
+//   color: #fff;
+//   padding: 24px 32px 48px;
+//   // transition: 0.3s;
+
+//   // &:hover {
+//   //   width: 300px;
+//   //   height: 300px;
+//   // }
+// }
+// .signInTitle {
+//   text-align: center;
+//   font-size: 24px;
+//   font-weight: bold;
+// }
+// .signInList {
+//   list-style: none;
+//   padding: 0;
+// }
+// .userAcc, .userPwd {
+//   border-radius: 100px;
+//   width: 190px;
+//   // width: 100%;
+//   margin-bottom: 20px;
+// }
+// .btnLogin {
+//   background-color: rgb(202, 42, 42);
+//   width: 100%;
+//   border-radius: 100px;
+//   // margin-top: 24px;
+//   color: #fff;
+
+//   // &:hover {
+//   //   background-color: #fa0;
+//   // }
+//   // &:active {
+//   //   background-color: #f0a;
+//   // }
+// }
 
 
 // .title {
@@ -70,3 +83,33 @@
 //     font-size: 32px;
 //   }
 // }
+
+.loginBox {
+  width: 320px;
+  background-color: rgb(58, 58, 132);
+  padding: 40px;
+
+}
+.title {
+  color: #fff;
+  text-align: center;
+}
+.acc {
+  color: #fff;
+  margin-bottom: 18px;
+}
+.pwd {
+  color: #fff;
+  margin-bottom: 18px;
+}
+input {
+  width: 80%;
+  border-radius: 100px;
+}
+.loginBtn {
+  width: 100%;
+  border-radius: 100px;
+  background-color: rgb(136, 42, 42);
+  color: #fff;
+}
+
