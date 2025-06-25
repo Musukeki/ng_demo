@@ -1,4 +1,4 @@
-安裝node指定版本:nvm -install 版本號2
+安裝node指定版本:nvm install 版本號2
 切換node 版本:nvm use 欲切換版本號
 顯示node 已安裝版本列表:nvm ls
 顯示node版本: node -v
