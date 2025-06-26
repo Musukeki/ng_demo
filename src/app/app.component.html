@@ -116,11 +116,16 @@
 
 <div class="backTop"></div> -->
 <!-- ! TS -->
-
+<!-- ?TS 變數練習 -->
 <!-- 要將全域變數內容顯示在HTML上，需要用兩組{}'將全域變數名稱包起來' -->
 <!-- 告訴系統{{}}中的內容是全域變數 -->
 <!-- {{ textContent }} -->
 
-<h1 style="background-color: red;">{{ showTitle }}</h1>
+<!-- <h1 style="background-color: red;">{{ showTitle }}</h1>
 <h3 style="background-color: blue; color: #fff;">{{ showContent }}</h3>
-<img src="{{ showImg }}">
+<img src="{{ showImg }}"> -->
+
+<button (click)="showConsole()">showConsole</button>
+
+<!-- <button (click)="alertContent("hello")">showConsole</button> -->
+<button (click)="alertContent('hello')">showContent</button>
