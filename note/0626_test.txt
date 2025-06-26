@@ -1,0 +1,41 @@
+1.和模型分為哪幾個部分?(有四個)
+  元素本身寬高、padding、margin、border
+
+2.內容跟邊框要調整距離要設定哪個?
+  padding
+
+3.標籤跟標籤之間要調整距離要設定哪個?
+  margin
+
+4.我現在要設定上跟右的padding距離要怎麼寫?
+  padding-top、padding-right
+
+5.網頁的預設單位為何?還有什麼單位可以使用?
+  預設px，還有 em、rem、%、vw、vh...等等
+
+6.我想設定滑鼠"移動到"標籤上要變大，我的CSS要怎麼寫?
+  選擇器:hover
+
+7.我想設定滑鼠"點擊"標籤時要變大，我的CSS要怎麼寫?
+  選擇器:active
+
+8.網頁的主軸在"沒有設定任何CSS的時候"是上到下還是左到右?
+  上到下，並且沒有次軸
+
+9.如果今天要讓網頁有主軸跟次軸要怎麼設定?
+  display: flex;
+
+10.justify-content跟align-items這兩個CSS要搭配誰才能生效?
+  display: flex;
+
+11.如果我今天寫了兩個CSS都是設定顏色(color)最後網頁會顯示怎樣(html跟CSS如下)
+  <button class="bntCss bntCss2">按鈕</button>
+
+  .bntCss {
+    color: red;
+  }
+  .bntCss2 {
+    color: blue;
+  }
+
+  藍色(blue)
