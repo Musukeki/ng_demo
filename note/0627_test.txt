@@ -1,0 +1,65 @@
+1.畫面要設定背景怎麼寫?
+  background
+
+2.背景不希望重複怎麼寫?
+  background-repeat: no-repeat
+
+3.想把背景大小設定成 300px*300px 怎麼寫?
+  background-size: 300px 300px;
+
+4.圖片要固定在畫面右下角並且拖拉時不會移動怎麼寫?
+  position: fixed;
+
+5.如果沒有設定父層 但設定一個 div 是子層 那它的父層是誰?
+  <body></body>
+
+6.z-index 的參數可以是負數嗎?
+  可以
+
+7.當我設定了以下的 CSS 那我結果會是什麼顏色?
+  <span class="spanCss"></span>
+  span {
+    color: blue;
+  }
+  span {
+    color: green;
+  }
+  綠色
+
+8.承上題，那我改成這樣呢?
+  <span class="spanCss"></span>
+  .spanCss {
+    color: blue;
+  }
+  span {
+    color: green;
+  }
+  藍色
+
+9.如果我相望我的CSS強制要求系統一定要用 我要在CSS後面加什麼?
+  !important
+
+10."Allen" 這是什麼類型的資料? 'Allen' 這個呢?
+  都是 String(字符串)
+
+11.當我設定了一個變數的類型為number 我可以設定它的初始值true嗎? 不行的話為什麼?
+  不行，true 不是 number 類型，是 boolean
+
+12.arrayData: Array<string> = ['a', 2, 'b']; 前面這段變數宣告有問題嗎? 有的話要怎麼修改?
+  有問題，改成 Array<string> = ['a', '2', 'b'];
+
+
+13.當我沒辦法確定這個變數的類型是什麼的時候，我要宣告它的類型是什麼?
+  any
+
+14.全域變數要宣告在哪個裡面?
+  class AppComponent
+
+15.區域變數要宣告在哪個裡面?
+  方法裡面
+
+16.當區域變數設定完初始值後，不希望更改我要怎麼寫?
+  使用 const 宣告
+
+17.我要宣告一個方法，那我要麼寫?(三步驟)
+  方法名稱() {}
