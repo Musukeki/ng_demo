@@ -36,4 +36,7 @@ export class AppComponent {
   alertContent(str: string) {
     console.log(str);
   }
+  ngOnDestroy() {
+  alert('我要被關掉了，再見！');
+}
 }
