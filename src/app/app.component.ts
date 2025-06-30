@@ -118,15 +118,16 @@ export class AppComponent {
     //   console.log(tsArr)
     // }
 
+    // !!!!!!! TS 練習
 
     // ? TS for 迴圈練習
     // ? 1.
-    // for(let i = 0; i <= 50; i++) {
+    // for(let i = 1; i <= 50; i++) {
     //   console.log(i)
     // }
 
     // ? 2.
-    // for(let i = 0; i <= 50; i++) {
+    // for(let i = 1; i <= 50; i++) {
     //   if(i % 2 != 0) {
     //     console.log(i)
     //   }
@@ -161,22 +162,34 @@ export class AppComponent {
     // })
     // console.log(data)
 
-    // ? 5.
-    // let arr = [4, 6, 1, 2, 7, 9, 12, 15, 13];
+    // ! 5.
+    let arr = [4, 6, 1, 2, 7, 9, 12, 15, 13];
     // console.log(Math.min(...arr))
+
+    let i = arr[0];
+    for(let data of arr) {
+      if(data < i) {
+        i = data;
+      }
+    }
+
+
 
     // ? 6.
     // let str = '你好我是Allen';
     // console.log(str.split('').reverse().join(""))
 
     // ? 7.
-    let str = '你好我是Allen';
-    // let finalStr = str.split('')
-    let newArr = str.split('').slice(2).join('')
-    let newArr2 = str.split('').slice(0, 2).join('')
-    let finallArr = newArr.concat(',', newArr2)
-    // console.log(newArr, newArr2)
-    console.log(finallArr)
+    // let str = '你好我是Allen';
+    // let newArr = str.split('').slice(2).join('')
+    // let newArr2 = str.split('').slice(0, 2).join('')
+    // let finallArr = newArr.concat(',', newArr2)
+    // console.log(finallArr)
+
+    // ? 7.
+    let str:string = '你好，我是 Allen';
+    let getName = str.slice(str.indexOf('Allen'), str.indexOf('Allen') +5);
+    console.log(getName)
   }
 }
 
