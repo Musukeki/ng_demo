@@ -142,9 +142,10 @@
   <h3>等級計算機</h3>
   <p class="level">等級：{{lev}}</p>
   <button (click)="levUp()">升級</button>
+  <button (click)="levDown()" style="margin-left: 4px;">降級</button>
   <p>攻擊力：{{att}}</p>
   <p>防禦力：{{def}}</p>
-  <input type="text" class="editInput" [(ngModel)]="inputLev">
+  <input type="text" class="editInput" placeholder="請輸入等級" [(ngModel)]="inputLev">
   <button (click)="editLev()">修改等級</button>
   <button (click)="reset()" class="resetBtn">重置</button>
 </div>

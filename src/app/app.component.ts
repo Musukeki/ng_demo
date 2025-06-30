@@ -22,12 +22,22 @@ export class AppComponent {
   lev: number = 1;
   att: number = 10;
   def: number = 10;
-  inputLev: number = 0;
+  inputLev: number = 1;
 
   levUp() {
     this.lev++
     this.att += 3
     this.def += 2
+  }
+
+  levDown() {
+    if(this.lev > 1) {
+      this.lev--
+      this.att -=3
+      this.def -=2
+    } else {
+      alert('已是最低等級')
+    }
   }
 
   reset() {
@@ -37,11 +47,20 @@ export class AppComponent {
   }
 
   editLev() {
-    // console.log(this.inputLev)
-    this.lev = this.inputLev
-    this.att = 3 * this.inputLev
-    this.def = 2 * this.inputLev
-    this.inputLev = 0
+    let editLev = Number(this.inputLev);
+
+    if(typeof(editLev) == 'number' && editLev > 0) {
+
+      console.log(this.inputLev)
+
+      this.lev = this.inputLev
+      this.att = (10 + this.inputLev * 3) -3
+      this.def = (10 + this.inputLev * 2) -2
+
+      this.inputLev = this.inputLev;
+    } else {
+      alert('等級不可小於1')
+    }
   }
 
   // ! ts 變數練習
