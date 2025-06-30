@@ -131,6 +131,20 @@
 <!-- <button (click)="alertContent('hello')">showContent</button> -->
 
 
-<h2 style="color: red; text-align: center; font-weight: 700;">Angular引用元件</h2>
+<!-- <h2 style="color: red; text-align: center; font-weight: 700;">Angular引用元件</h2>
 <app-roles></app-roles>
-<app-nav></app-nav>
+<app-nav></app-nav> -->
+
+
+<!-- ? ng綁定 -->
+
+<div class="wrap">
+  <h3>等級計算機</h3>
+  <p class="level">等級：{{lev}}</p>
+  <button (click)="levUp()">升級</button>
+  <p>攻擊力：{{att}}</p>
+  <p>防禦力：{{def}}</p>
+  <input type="text" class="editInput" [(ngModel)]="inputLev">
+  <button (click)="editLev()">修改等級</button>
+  <button (click)="reset()" class="resetBtn">重置</button>
+</div>

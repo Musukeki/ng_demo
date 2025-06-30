@@ -1,1 +1,4 @@
 ng generate component 資料夾名稱/組件名稱
+
+
+要引用的.ts檔案要引用 新創的元件，需要在 要引用的 .ts 檔案 @import + import: [加入要引用的元件名稱]，引用的元件標籤名稱輸入

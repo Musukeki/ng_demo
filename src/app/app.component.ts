@@ -1,21 +1,48 @@
 // import{使用的套件名稱} from
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { RolesComponent } from './roles/roles.component';
 import { NavComponent } from './nav/nav.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   imports: [
     // RouterOutlet(暫時用不到),
     RolesComponent,
-    NavComponent
+    NavComponent,
+    FormsModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  lev: number = 1;
+  att: number = 10;
+  def: number = 10;
+  inputLev: number = 0;
+
+  levUp() {
+    this.lev++
+    this.att += 3
+    this.def += 2
+  }
+
+  reset() {
+    this.lev = 1
+    this.att = 10
+    this.def = 10
+  }
+
+  editLev() {
+    // console.log(this.inputLev)
+    this.lev = this.inputLev
+    this.att = 3 * this.inputLev
+    this.def = 2 * this.inputLev
+    this.inputLev = 0
+  }
 
   // ! ts 變數練習
   // ?宣告全域變數
@@ -50,6 +77,10 @@ export class AppComponent {
   // arrayData: Array<any> = ['a', 2, 'b'];
 
   ngOnInit(): void {
+
+
+
+
     // console.log('開啟時執行')
 
     // let numData: number = 1;
@@ -275,4 +306,6 @@ export class AppComponent {
   //     console.log(`BMI 為 ${bmi}，重度肥胖`)
   //   }
   // }
+
+
 }
