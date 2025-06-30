@@ -166,11 +166,17 @@ export class AppComponent {
     // console.log(Math.min(...arr))
 
     // ? 6.
-    let str = '你好我是Allen';
-    console.log(str.split('').reverse().join(""))
+    // let str = '你好我是Allen';
+    // console.log(str.split('').reverse().join(""))
 
     // ? 7.
-    let finalStr = str.split('')
+    let str = '你好我是Allen';
+    // let finalStr = str.split('')
+    let newArr = str.split('').slice(2).join('')
+    let newArr2 = str.split('').slice(0, 2).join('')
+    let finallArr = newArr.concat(',', newArr2)
+    // console.log(newArr, newArr2)
+    console.log(finallArr)
   }
 }
 
