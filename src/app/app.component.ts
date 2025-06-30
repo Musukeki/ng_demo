@@ -2,9 +2,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { RolesComponent } from './roles/roles.component';
+import { NavComponent } from './nav/nav.component';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    // RouterOutlet(暫時用不到),
+    RolesComponent,
+    NavComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -204,68 +211,68 @@ export class AppComponent {
     // ? TS 練習宣告
 
     // ? 1.
-    let allenWallet = 200;
-    let burgerPrice = 50;
-    let frenchFricePrice = 40;
-    let restMoney = allenWallet - (burgerPrice + frenchFricePrice);
-    console.log(`Allen 剩下 ${restMoney} 元`)
+    // let allenWallet = 200;
+    // let burgerPrice = 50;
+    // let frenchFricePrice = 40;
+    // let restMoney = allenWallet - (burgerPrice + frenchFricePrice);
+    // console.log(`Allen 剩下 ${restMoney} 元`)
 
     // ? 2.
 
 
 
     // ? 3.
-    let jsonData = [
-      {
-        userName: 'Allen',
-        payMoney: 500
-      },
-      {
-        userName: 'Ben',
-        payMoney: 20
-      },
-      {
-        userName: 'Eric',
-        payMoney: 120
-      }
-    ]
+    // let jsonData = [
+    //   {
+    //     userName: 'Allen',
+    //     payMoney: 500
+    //   },
+    //   {
+    //     userName: 'Ben',
+    //     payMoney: 20
+    //   },
+    //   {
+    //     userName: 'Eric',
+    //     payMoney: 120
+    //   }
+    // ]
     // for loop
-    let vipUsers = [];
-    for(let data of jsonData) {
-      if(data.payMoney > 200) {
-        vipUsers.push(data.userName)
-      }
-    }
-    console.log(vipUsers)
+    // let vipUsers = [];
+    // for(let data of jsonData) {
+    //   if(data.payMoney > 200) {
+    //     vipUsers.push(data.userName)
+    //   }
+    // }
+    // console.log(vipUsers)
 
     // forEach
-    jsonData.forEach(i => {
-      if (i.payMoney >= 200) {
-        console.log(`${i.userName} 有符合 VIP 資格`)
-      }
-    })
+    // jsonData.forEach(i => {
+    //   if (i.payMoney >= 200) {
+    //     console.log(`${i.userName} 有符合 VIP 資格`)
+    //   }
+    // })
 
     // ? 4.
 
-    this.showBmi(85, 182) // showBmi 呼叫
+    // this.showBmi(85, 182) // showBmi 呼叫
   }
 
 
-  showBmi(weight: number, height: number) {
-    let bmi: number = Number((weight / (height / 100) ** 2).toFixed(2));
+  // showBmi(weight: number, height: number) {
+  //   let bmi: number = Number((weight / (height / 100) ** 2).toFixed(2));
 
-    if (bmi < 18.5) {
-      console.log(`BMI 為 ${bmi}，體重過輕`)
-    }else if(bmi >= 18.5 && bmi < 24) {
-      console.log(`BMI 為 ${bmi}，體重正常`)
-    }else if(bmi >= 24 && bmi < 27) {
-      console.log(`BMI 為 ${bmi}，體重過重`)
-    }else if(bmi >= 27 && bmi < 30) {
-      console.log(`BMI 為 ${bmi}，輕度肥胖`)
-    }else if(bmi >= 30 && bmi < 35) {
-      console.log(`BMI 為 ${bmi}，中度肥胖`)
-    }else if(bmi >= 35) {
-      console.log(`BMI 為 ${bmi}，重度肥胖`)
-    }
-  }
+  //   if (bmi < 18.5) {
+  //     console.log(`BMI 為 ${bmi}，體重過輕`)
+  //   }else if(bmi >= 18.5 && bmi < 24) {
+  //     console.log(`BMI 為 ${bmi}，體重正常`)
+  //   }else if(bmi >= 24 && bmi < 27) {
+  //     console.log(`BMI 為 ${bmi}，體重過重`)
+  //   }else if(bmi >= 27 && bmi < 30) {
+  //     console.log(`BMI 為 ${bmi}，輕度肥胖`)
+  //   }else if(bmi >= 30 && bmi < 35) {
+  //     console.log(`BMI 為 ${bmi}，中度肥胖`)
+  //   }else if(bmi >= 35) {
+  //     console.log(`BMI 為 ${bmi}，重度肥胖`)
+  //   }
+  // }
 }

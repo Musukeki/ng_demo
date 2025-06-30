@@ -1,0 +1,1 @@
+ng generate component 資料夾名稱/組件名稱
