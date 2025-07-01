@@ -17,3 +17,11 @@ ng generate component 資料夾名稱/組件名稱
 // ----- ----- //
 import:要引用的
 imports:該畫面要使用的東西
+
+
+// ----- Angular 路由設定 ----- //
+app.routes.ts 中引用(import) 要設定路由的元件和元件路徑位置
+確認 app.config.ts 確認 providers 中是否有加入 provideRouter 函式並帶入 routes
+-> prociders: [provideRouter(routes)]
+
+定義基本路線

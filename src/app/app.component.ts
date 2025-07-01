@@ -29,6 +29,7 @@ export class AppComponent {
     this.lev++
     this.att += 3
     this.def += 2
+
   }
 
   levDown() {
@@ -109,11 +110,15 @@ export class AppComponent {
 
   // arrayData: Array<any> = ['a', 2, 'b'];
 
+
   ngOnInit(): void {
 
 
+    function fnName() {
 
+    }
 
+    fnName()
     // console.log('開啟時執行')
 
     // let numData: number = 1;
