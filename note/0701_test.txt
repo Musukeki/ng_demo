@@ -1,0 +1,18 @@
+1.全域變數、內嵌繫結
+
+2.全域變數:一直存到頁面消失/區域變數:方法結束就消失
+
+3.this.title
+
+4.全域變數++
+
+5.新增元件 -> A的ts檔案中 import B元件的名稱和
+位置(import { B元件名稱 } from 'B元件的位置路徑') -> 在A的ts檔案中的imports引用元件 -> A的html檔案使用B的元件標籤名稱
+
+6.事件繫結
+
+7.雙向繫結、FormsModule
+
+8.testFun() {
+    this.testFun2()
+  }

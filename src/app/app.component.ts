@@ -22,7 +22,8 @@ export class AppComponent {
   lev: number = 1;
   att: number = 10;
   def: number = 10;
-  inputLev: number = 1;
+  // inputLev: number = 1;
+  inputLev!: string; // ! -> 讓系統跳過檢查(型別)
 
   levUp() {
     this.lev++
@@ -44,24 +45,37 @@ export class AppComponent {
     this.lev = 1
     this.att = 10
     this.def = 10
+    // this.inputLev = 1
   }
 
+  // ? 僅用 if
+  // editLev() {
+  //   let editLev = Number(this.inputLev);
+
+  //   if(typeof(editLev) == 'number' && editLev > 0) {
+
+  //     console.log(this.inputLev)
+
+  //     this.lev = this.inputLev
+  //     this.att = (10 + this.inputLev * 3) -3
+  //     this.def = (10 + this.inputLev * 2) -2
+
+  //     this.inputLev = this.inputLev;
+  //   } else {
+  //     alert('等級不可小於1')
+  //   }
+  // }
+
+  // ? 使用 for loop
   editLev() {
-    let editLev = Number(this.inputLev);
+    this.reset()
 
-    if(typeof(editLev) == 'number' && editLev > 0) {
-
-      console.log(this.inputLev)
-
-      this.lev = this.inputLev
-      this.att = (10 + this.inputLev * 3) -3
-      this.def = (10 + this.inputLev * 2) -2
-
-      this.inputLev = this.inputLev;
-    } else {
-      alert('等級不可小於1')
+    for(let i = 1; i < parseInt(this.inputLev); i++) {
+      this.levUp();
     }
+    this.inputLev = '';
   }
+
 
   // ! ts 變數練習
   // ?宣告全域變數
